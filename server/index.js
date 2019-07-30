@@ -1,13 +1,14 @@
 require("dotenv").config();
 const express = require("express");
 const session = require("express-session");
-const { SERVER_PORT, SESSION_SECRET } = process.env;
 const checkSession = require("./middleware/checkForSession");
 const swagController = require("./controllers/swagController");
 const authController = require("./controllers/authController");
 const cartController = require("./controllers/cartController");
 const searchController = require("./controllers/searchController");
+
 const app = express();
+const { SERVER_PORT, SESSION_SECRET } = process.env;
 
 app.listen(SERVER_PORT, () => {
   console.log(`Server ${SERVER_PORT} is aware`);

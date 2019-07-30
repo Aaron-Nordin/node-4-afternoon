@@ -17,7 +17,7 @@
     "redux-promise-middleware": "^4.3.0"
   },
   "devDependencies": {
-    "react-scripts": "1.0.7"
+    "react-scripts": "^1.0.7"
   },
   "scripts": {
     "start": "react-scripts start",
