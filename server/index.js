@@ -23,6 +23,7 @@ app.use(
   })
 );
 app.use(checkSession);
+app.use(express.static(`${__dirname}/../build`))
 
 //---------------------------ENDPOINTS-----------------------------------
 // SWAG
